@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style src="style.css"></style>
+</head>
+<body onload = "initalize()">
+    <div id="nav">    
+        <h1><center>Count Your Calories!</center></h1>
+    </div>
+
+    <br> 
+    <h2><center>Appetizer</center></h2>
+
+    <center>
+        <button onclick = "changeCal(4, 'p', 'a');" id="button"> Add Protein</button>
+        <button onclick = "changeCal(-4, 'p', 'a');" id="button"> Remove Protein</button>
+        <button onclick = "changeCal(4, 'c', 'a');" id="button"> Add Carbohydrates</button>
+        <button onclick = "changeCal(-4, 'c', 'a');" id="button"> Remove Carbohydrates</button>
+        <button onclick = "changeCal(8, 'f', 'a');" id="button"> Add Fats</button>
+        <button onclick = "changeCal(-8, 'f', 'a');" id="button"> Remove Fats</button>
+    </center>
+
+    <center>
+    <p> Total Protein Calorie: <span id = "Protein"></span></p>
+    <p>Total Carbohydrates Calories: <span id = "Carb"></p>
+    <p>Total Fats Calories: <span id = "Fat"></p>
+    <p>Total Calories: <span id = "atotal"></p>
+
+    </center>
+    <br>
+    <h2><center>Entree</center></h2>
+    <center>
+        <button onclick = "changeCal(4,'p','e');" id="button" type = "button"> Add Protein</button>
+        <button onclick = "changeCal(-4, 'p', 'e');" id="button" type = "button"> Remove Protein</button>
+        <button onclick = "changeCal(4, 'c','e');" id="button" type = "button"> Add Carbohydrates</button>
+        <button onclick = "changeCal(-4, 'c','e');" id="button" type = "button"> Remove Carbohydrates</button>
+        <button onclick = "changeCal(8, 'f', 'e');" id="button" type = "button"> Add Fats</button>
+        <button onclick = "changeCal(-8,'f','e');" id="button" type = "button"> Remove Fats</button>
+    </center>
+
+    <center>
+    <br>
+    <span>Total Protein: </span>
+    <span id = "e1"></span>
+    <p>Total Carbohydrates:    
+    <span id = "e2"></span> </p>
+    <span>Total Fats: </span>
+    <span id = "e3"></span>
+    <p>Total Calories:  <span id = "e4"></span></p>
+   
+    <br> 
+    </center>
+
+    <h2><center>Dessert</center></h2>
+
+    <center>
+        <button onclick = "changeCal(4,'p','d');" id="button" type = "button"> Add Protein</button>
+        <button onclick = "changeCal(-4,'p','d');" id="button" type = "button"> Remove Protein</button>
+        <button onclick = "changeCal(4,'p','d');" id="button" type = "button"> Add Carbohydrates</button>
+        <button onclick = "changeCal(-4,'p','d');" id="button" type = "button"> Remove Carbohydrates</button>
+        <button onclick = "changeCal(8,'p','d');" id="button" type = "button"> Add Fats</button>
+        <button onclick = "changeCal(-8,'p','d');" id="button" type = "button"> Remove Fats</button>
+    </center>
+    <center>
+        <p>Total Protein: <span id = "d1"></span></p>
+        <p>Total Carbohydrates: <span id = "d2"></span></p>
+        <p>Total Fats: <span id = "d3"></span> </p>
+        <p>Total Calories: <span id = "d4"></span></p>
+    </center>
+    <br> 
+    <h2><center>Total</center></h2>
+
+    <center> 
+    <p>Total Calories: <span id = "t1"> </span></p>
+    </center>
+
+</body>
+</html>
